@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" lang="zh">
+   <title>Document</title>
+   <script src="./key-trap.js"></script>
+</head>
+
+<body>
+   <script>
+      const { ipcRenderer } = require('electron')
+      communication()
+      async function communication() {
+         ipcRenderer.send('ces')
+      }
+      const { init, searchKey, searchKeyWord, MonitorKeys, modifyKey } = require('key-trap')
+      init({
+         window: window,
+         config: [
+            {
+               command: 'console',
+               key: 'f12',
+               role: 'toggledevtools'
+            },
+            {
+               command: 'reload',
+               key: 'f5',
+               role: 'windowReload',
+            }
+         ]
+      })
+      // function exe() {
+      MonitorKeys((keyStr, modifier, character) => {
+         console.log(keyStr);
+      }).then(a => {
+         console.log(a);
+      })
+// }
+   </script>
+</body>
+
+</html>

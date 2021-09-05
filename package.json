@@ -1,0 +1,13 @@
+{
+  "name": "key-trap",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+     "start": "chcp 65001&&electron ."
+  },
+  "main": "key-trap.js",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "types": "key-trap.d.ts"
+}
