@@ -1,4 +1,4 @@
-const { ipcMain, webContents } = require('electron')
+const { ipcMain, webContents, BrowserWindow } = require('electron')
 
 ipcMain.on({
    'key-toggledevtools'() {
@@ -6,5 +6,11 @@ ipcMain.on({
    },
    'key-windowReload'() {
       webContents.getFocusedWebContents().reload()
-   }
+   },
+   'key-maximize'() {
+      BrowserWindow.getFocusedWindow().maximize()
+   },
+   'key-unmaximize'() {
+      BrowserWindow.getFocusedWindow().unmaximize()
+   },
 })

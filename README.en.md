@@ -33,3 +33,10 @@ Used in the rendering process of Electron
 | role       | System instructions             |
 | event      | Event function                  |
 
+#### role
+Using events quickly to call system events will override the event attribute to make it invalid.
+To make it effective, the `role.js` file must be introduced in the main process
+| role           | describe          |
+| -------------- | ------------ |
+| toggledevtools | Switch console   |
+| windowReload   | Refresh the current window |

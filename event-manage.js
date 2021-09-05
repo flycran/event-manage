@@ -42,7 +42,13 @@ const ROLE = {
    },
    windowReload() {
       ipcRenderer.send('key-windowReload')
-   }
+   },
+   maximize() {
+      ipcRenderer.send('key-maximize')
+   },
+   unmaximize() {
+      ipcRenderer.send('key-unmaximize')
+   },
 }
 let WINDOW
 /**
