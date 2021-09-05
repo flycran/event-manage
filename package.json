@@ -1,13 +1,26 @@
 {
-  "name": "key-trap",
+  "name": "event-manage",
   "version": "1.0.0",
-  "description": "",
   "scripts": {
-     "start": "chcp 65001&&electron ."
+    "start": "chcp 65001&&electron ."
   },
-  "main": "key-trap.js",
+  "main": "event-manage.js",
   "author": "",
   "license": "ISC",
   "dependencies": {},
-  "types": "key-trap.d.ts"
+  "devDependencies": {
+    "electron": "^14.0.0"
+  },
+  "types": "event-manage.d.ts",
+  "keywords": [
+    "electron",
+    "keyboard",
+    "shortcuts",
+    "events"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://gitee.com/cffh/event-manage.git"
+  },
+  "description": ""
 }
