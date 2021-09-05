@@ -8,7 +8,7 @@ Depends on Electron operation.
 
 `npm i event-manage`
 
-### 使用说明
+### Instructions for use
 Used in the rendering process of Electron
 ```js
    const { ipcRenderer } = require('electron')
