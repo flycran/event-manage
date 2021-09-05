@@ -35,9 +35,11 @@ Used in the rendering process of Electron
 
 #### role
 Using events quickly to call system events will override the event attribute to make it invalid.
+
 To make it effective, the `role.js` file must be introduced in the main process
+
 Write `require('event-manage/role')` in the head of the main process.
-| role           | describe          |
-| -------------- | ------------ |
-| toggledevtools | Switch console   |
+| role           | describe                   |
+| -------------- | -------------------------- |
+| toggledevtools | Switch console             |
 | windowReload   | Refresh the current window |

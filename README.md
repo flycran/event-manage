@@ -35,8 +35,11 @@
 
 #### role
 将事件快速用于调用系统事件，将会覆盖event属性使其失效。
+
 要使其生效，必须在主进程引入`role.js`文件
+
 在主进程头部写入`require('event-manage/role')`即可。
+
 | role           | 描述         |
 | -------------- | ------------ |
 | toggledevtools | 切换控制台   |
